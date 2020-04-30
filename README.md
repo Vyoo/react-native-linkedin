@@ -109,7 +109,6 @@ export default class AppContainer extends React.Component {
 | closeStyle               | ViewPropTypes.style           | optional                                                                              |                                     | Customize close style                                                                                                                                                                                    |
 | animationType            | Modal.propTypes.animationType | optional                                                                              | `fade`                              | Customize animationType style: 'none', 'slide' or 'fade'                                                                                                                                                 |
 | **shouldGetAccessToken** | bool                          | optional                                                                              | `true`                              | Set to false to receive the 'authorization code' rather then the 'access token'                                                                                                                          |
-| areaTouchText | object      | optional       | `{top: 20, bottom: 20, left: 50, right: 50}`          | Set values for to increase the text touch area          |
 
 ## Contribution
 
@@ -123,24 +122,9 @@ export default class AppContainer extends React.Component {
 
 **YES**
 
-### How to logout react-native-linkedin?
-```tsx
-<View style={styles.container}>
-    <LinkedInModal
-      ref={this.linkedRef}
-      clientID="[ Your client id from https://www.linkedin.com/developer/apps ]"
-      clientSecret="[ Your client secret from https://www.linkedin.com/developer/apps ]"
-      redirectUri="[ Your redirect uri set into https://www.linkedin.com/developer/apps ]"
-      onSuccess={token => console.log(token)}
-    />
-    <Button title="Log Out" onPress={this.linkedRef.current.logoutAsync()} />
-</View>
-```
-
-
 ## Other questions
 
-Feel free to [contact me](mailto:xcapetir@gmail.com) or [create an issue](https://github.com/xcarpentier/react-native-linkedin/issues/new)
+Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-linkedin/issues/new)
 
 ## Alternatives
 
